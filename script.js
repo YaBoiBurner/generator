@@ -225,6 +225,6 @@ function generateName() {
   document.getElementById("generated").style.color = "black";
   var fWnum = Math.floor(Math.random() * firstWord.length);
   var sWnum = Math.floor(Math.random() * secondWord.length);
-  var named = firstWord[fWnum] + " " + secondWord[sWnum];
+  var named = `${firstWord[fWnum]} ${secondWord[sWnum]}`;
   document.getElementById("generated").innerHTML = named;
 }
